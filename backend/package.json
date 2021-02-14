@@ -1,8 +1,8 @@
 {
-  "name": "nodejsbyte1",
+  "name": "meme-stream-ms",
   "version": "1.0.0",
-  "description": "NodeJS first Byte",
-  "main": "app.js",
+  "description": "meme-stream-ms app for sharing memes",
+  "main": "src/app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "nodemon src/app.js"
