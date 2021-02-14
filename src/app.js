@@ -13,7 +13,7 @@ app.use(captureDateMiddleware);
 
 app.use("/v1", routes);
 mongoose
-  .connect("mongodb+srv://admin:pa55word@meme-stream.yiauy.mongodb.net/memeapp?retryWrites=true&w=majority", config.mongoose.options)
+  .connect(config.mongoose.url, config.mongoose.options)
   .then(() => {
     console.log("Connected to MongoDB");
     app.listen(config.port, () => {
