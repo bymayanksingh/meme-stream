@@ -1,0 +1,64 @@
+{
+	"info": {
+		"_postman_id": "8322a310-6422-4836-abda-a50625afa8f7",
+		"name": "Meme Stream",
+		"description": "Postman collection of API requests for the Crio Nodejs Mongo Byte",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "/memes",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "localhost:8082/v1/todos"
+			},
+			"response": []
+		},
+		{
+			"name": "/memes",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"Mayank Singh\",\n    \"caption\": \"Real Programmers\",\n    \"url\": \"https://imgs.xkcd.com/comics/real_programmers.png\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "https://meme-stream-ms.herokuapp.com/v1/memes"
+			},
+			"response": []
+		},
+		{
+			"name": "/memes",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"_id\": \"602992bcb4b5e8002240ee94\",\n    \"caption\": \"Good Morning!\",\n    \"url\": \"602992bcb4b5e8002240ee94\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "https://meme-stream-ms.herokuapp.com/v1/memes"
+			},
+			"response": []
+		},
+		{
+			"name": "/memes",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": "localhost:8082/v1/todos/1611056145826"
+			},
+			"response": []
+		}
+	]
+}

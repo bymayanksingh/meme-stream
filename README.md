@@ -4,7 +4,6 @@
 - [Index](#index)
 - [About](#about)
 - [Usage](#usage)
-  - [Installation](#installation)
 - [File Structure](#file-structure)
 - [Gallery](#gallery)
 - [Credit/Acknowledgment](#creditacknowledgment)
@@ -24,7 +23,11 @@ this is MemeStream, a full stack web app created using node.js, express, react.j
 #### Video
 
 - 
-## Usage & Installation
+## Usage
+
+```
+NOTE - API Collection directory contains the postman API collection for this project.
+```
 
 **Backend**
 
@@ -88,6 +91,7 @@ $ npm start
 .
 ├── data
 │   └── export_memeapp_memes.json
+├── API Collection
 ├── frontend
 │   ├── package.json
 │   ├── package-lock.json
@@ -134,7 +138,7 @@ $ npm start
             ├── index.js
             └── meme.route.js
 
-12 directories, 35 files
+13 directories, 35 files
 ```
 
 ## Gallery
