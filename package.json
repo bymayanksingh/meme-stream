@@ -8,7 +8,7 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node src/app.js"
+    "start": "nodemon src/app.js"
   },
   "author": "Mayank Singh",
   "license": "ISC",
@@ -18,7 +18,7 @@
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
     "method-override": "^3.0.0",
-    "mongoose": "^5.11.16",
+    "mongoose": "^5.11.15",
     "nodemon": "^2.0.7"
   }
 }

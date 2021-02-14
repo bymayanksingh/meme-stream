@@ -15,12 +15,7 @@ app.use(captureDateMiddleware);
 app.use("/v1", routes);
 
 mongoose
-  .connect(config.mongoose.url, {
-    useCreateIndex: true,
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
-    useFindAndModify: false,
-  })
+  .connect(config.mongoose.url, config.mongoose.options)
   .then(() => {
     console.log("Connected to MongoDB");
     app.listen(config.port, () => {
