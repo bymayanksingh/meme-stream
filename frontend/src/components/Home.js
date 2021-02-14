@@ -18,9 +18,8 @@ class Home extends React.Component {
   handleSubmit = (memeobject) => {
     axios.post(`${config.endpoint}/memes`, memeobject).then((res) => {
       console.log("Recieved data ", res.data);
-      this.setState({ memeobjects: [...this.state.memeobjects, res.data] });
+      this.setState({ memeobjects: [res.data, ...this.state.memeobjects] });
     });
-    window.location.reload();
   };
 
   handleDelete = (index) => {
@@ -40,7 +39,6 @@ class Home extends React.Component {
     });
     newArr.splice(pos, 1);
     this.setState({ memeobjects: newArr });
-    window.location.reload();
   };
 
   handleUpdate = async (memeobject) => {
@@ -55,7 +53,7 @@ class Home extends React.Component {
     }
 
     if (pos === -1) return;
-    newArr[pos].name = memeobject.name;
+
     newArr[pos].caption = memeobject.caption;
     newArr[pos].url = memeobject.url;
     let updateMemeObject = newArr[pos];
@@ -66,8 +64,11 @@ class Home extends React.Component {
       .then((res) => {
         console.log("Updating In Frontend", res.data);
       });
-    this.setState({ memeobjects: newArr });
-    window.location.reload();
+
+    newArr.splice(pos, 1);
+
+    this.setState({ memeobjects: [updateMemeObject, ...newArr] });
+
   };
 
   performAPICall = async () => {

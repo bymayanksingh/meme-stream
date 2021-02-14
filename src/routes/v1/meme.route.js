@@ -3,7 +3,7 @@ const router = express.Router();
 const Memes = require("../../models/meme.model");
 
 router.get("/", async (req, res) => {
-  Memes.find({}).limit(100).sort({'updatedAt': 'desc'}).exec((err, allMemes) => {
+  Memes.find({}).sort({'updatedAt': 'desc'}).limit(100).exec((err, allMemes) => {
     if (err) {
       res.status(500).send();
     } else {
@@ -30,7 +30,7 @@ router.post("/", async (req, res) => {
     url: req.body.url,
   };
 
-  Memes.create(newMeme, (err, newlyCreated) => {
+  Memes.create(newMeme, async (err, newlyCreated) => {
     if (err) {
       res.status(500).send();
     } else {
