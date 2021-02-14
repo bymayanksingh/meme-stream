@@ -16,8 +16,10 @@ app.use("/v1", routes);
 
 mongoose
   .connect(config.mongoose.url, {
-    useUnifiedTopology: true,
+    useCreateIndex: true,
     useNewUrlParser: true,
+    useUnifiedTopology: true,
+    useFindAndModify: false,
   })
   .then(() => {
     console.log("Connected to MongoDB");
