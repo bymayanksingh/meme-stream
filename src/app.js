@@ -4,7 +4,6 @@ const mongoose = require("mongoose");
 const captureDateMiddleware = require("./middleware/middleware");
 const cors = require("cors");
 const config = require("./config/config");
-const mongourl = require("./mongourl");
 const app = express();
 
 app.use(cors());
@@ -14,7 +13,7 @@ app.use(captureDateMiddleware);
 
 app.use("/v1", routes);
 mongoose
-  .connect(mongourl.url, config.mongoose.options)
+  .connect("mongodb+srv://admin:pa55word@meme-stream.yiauy.mongodb.net/memeapp?retryWrites=true&w=majority", config.mongoose.options)
   .then(() => {
     console.log("Connected to MongoDB");
     app.listen(config.port, () => {
