@@ -1,0 +1,75 @@
+{
+    "_id": {
+        "$oid": "60292affdb38367eafb06ffa"
+    },
+    "name": "Mayank Singh",
+    "caption": "XKCD Our Garden Grew",
+    "url": "https://imgs.xkcd.com/comics/project_orion.png",
+    "createdAt": {
+        "$date": "2021-02-14T13:51:59.376Z"
+    },
+    "updatedAt": {
+        "$date": "2021-02-14T13:51:59.376Z"
+    },
+    "__v": 0
+}
+{
+    "_id": {
+        "$oid": "60292b19db38367eafb06ffb"
+    },
+    "name": "Mayank Singh",
+    "caption": "Yeah Yeah everywhere to float",
+    "url": "https://imgs.xkcd.com/comics/barrel_cropped_(1).jpg",
+    "createdAt": {
+        "$date": "2021-02-14T13:52:25.796Z"
+    },
+    "updatedAt": {
+        "$date": "2021-02-14T13:52:25.796Z"
+    },
+    "__v": 0
+}
+{
+    "_id": {
+        "$oid": "60292b2ddb38367eafb06ffc"
+    },
+    "name": "Mayank Singh",
+    "caption": "this is not a meme but okay :P :P",
+    "url": "https://imgs.xkcd.com/comics/island_color.jpg",
+    "createdAt": {
+        "$date": "2021-02-14T13:52:45.73Z"
+    },
+    "updatedAt": {
+        "$date": "2021-02-14T13:52:45.73Z"
+    },
+    "__v": 0
+}
+{
+    "_id": {
+        "$oid": "60292b62db38367eafb06ffd"
+    },
+    "name": "Mayank Singh",
+    "caption": "Craigslist Apartment ???????",
+    "url": "https://imgs.xkcd.com/comics/craigslist_apartments.png",
+    "createdAt": {
+        "$date": "2021-02-14T13:53:38.482Z"
+    },
+    "updatedAt": {
+        "$date": "2021-02-14T13:53:38.482Z"
+    },
+    "__v": 0
+}
+{
+    "_id": {
+        "$oid": "60292b81db38367eafb06ffe"
+    },
+    "name": "Mayank Singh",
+    "caption": "Heaven",
+    "url": "https://imgs.xkcd.com/comics/heaven.png",
+    "createdAt": {
+        "$date": "2021-02-14T13:54:09.011Z"
+    },
+    "updatedAt": {
+        "$date": "2021-02-14T13:54:50.52Z"
+    },
+    "__v": 0
+}
