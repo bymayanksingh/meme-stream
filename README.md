@@ -22,7 +22,7 @@ this is MemeStream, a full stack web app created using node.js, express, react.j
 
 #### Video
 
-- 
+- [Meme Stream Walkthrough](https://youtu.be/kVEFtFHCfRw)
 ## Usage
 
 ```
@@ -57,7 +57,6 @@ $ echo "MONGODB_URL=mongodb://127.0.0.1:27017/memeapp" >> .env
 ```bash
 $ npm start
 ```  
-
 
 
 **Frontend**
