@@ -10,6 +10,7 @@ class Meme extends Component {
       name: "",
       caption: "",
       url: "",
+      updatedAt: "",
       mode: "view",
     };
 

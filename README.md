@@ -1,68 +1,148 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Index
 
-## Available Scripts
+- [Index](#index)
+- [About](#about)
+- [Usage](#usage)
+  - [Installation](#installation)
+- [File Structure](#file-structure)
+- [Gallery](#gallery)
+- [Credit/Acknowledgment](#creditacknowledgment)
 
-In the project directory, you can run:
+## About
 
-### `yarn start`
+this is MemeStream, a full stack web app created using node.js, express, react.js to crud operations on meme objects, this was created as a mini project submission at [Crio Winter of Doing](https://www.crio.do/crio-winter-of-doing/) challenge.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Deployed Links
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+#### Backend
+- [meme-stream-ms.herokuapp.com/v1/memes](https://meme-stream-ms.herokuapp.com/v1/memes)
 
-### `yarn test`
+#### Frontend
+- [meme-stream-ms.netlify.app](https://meme-stream-ms.netlify.app/)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+#### Video
 
-### `yarn build`
+- 
+## Usage & Installation
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+**Backend**
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+If you just want to do a simple local test run of the backend application, you can  first
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- Clone the repository
+- Install dependencies by using the following commands.
+- In case of any issues remove package-lock.json 
+- run:
 
-### `yarn eject`
+```bash
+$ npm install
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+- create a `.env` file in root directory and assign the following environment variables
+`NOTE: don't version control your .env file, make sure .env is added in .gitignore file`
+```bash
+$ touch .env #in project 
+$ echo "NODE_ENV=development" >> .env
+$ echo "PORT=8082" >> .env
+$ echo "MONGODB_URL=mongodb://127.0.0.1:27017/memeapp" >> .env
+#if you want then use mongoimport appropriately to import sample data from data/ directory 
+```
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- Finally run the application using 
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+```bash
+$ npm start
+```  
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+**Frontend**
 
-### Code Splitting
+If you just want to do a simple local test run of the frontend application, you can  first
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- Install dependencies by using the following commands.
+- In case of any issues remove package-lock.json & retry
+- run:
 
-### Analyzing the Bundle Size
+```bash
+$ cd frontend/
+$ npm install
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+- open  `frontend/src/ipConfig.json` file and assign the ip as
+```
+{"ip": "127.0.0.1"}
+```
 
-### Making a Progressive Web App
+- Finally run the application in another terminal using :
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+```bash
+$ npm start
+```  
 
-### Advanced Configuration
+## File Structure
+- Below is the current file structure.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+```bash
+.
+├── data
+│   └── export_memeapp_memes.json
+├── frontend
+│   ├── package.json
+│   ├── package-lock.json
+│   ├── public
+│   │   ├── favicon.ico
+│   │   ├── index.html
+│   │   ├── manifest.json
+│   │   └── robots.txt
+│   ├── setup.sh
+│   └── src
+│       ├── App.css
+│       ├── App.js
+│       ├── App.test.js
+│       ├── components
+│       │   ├── AspectRatio.js
+│       │   ├── Footer.js
+│       │   ├── Home.js
+│       │   ├── Meme.js
+│       │   ├── MemeList.js
+│       │   ├── SectionHeader.js
+│       │   ├── Section.js
+│       │   └── SubmitForm.js
+│       ├── index.css
+│       ├── index.js
+│       ├── ipConfig.json
+│       ├── reportWebVitals.js
+│       └── setupTests.js
+├── img
+│   └── 1.png
+├── package.json
+├── package-lock.json
+├── README.md
+├── .env
+└── src
+    ├── app.js
+    ├── config
+    │   └── config.js
+    ├── middleware
+    │   └── middleware.js
+    ├── models
+    │   └── meme.model.js
+    └── routes
+        └── v1
+            ├── index.js
+            └── meme.route.js
 
-### Deployment
+12 directories, 35 files
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## Gallery
 
-### `yarn build` fails to minify
+<p align="center">
+  <img src="./img/1.png" style="border: 1px solid gray">
+</p>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+## Credit/Acknowledgment
+- [Mayank Singh](https://twitter.com/codemonk08_)

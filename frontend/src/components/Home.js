@@ -56,6 +56,7 @@ class Home extends React.Component {
 
     newArr[pos].caption = memeobject.caption;
     newArr[pos].url = memeobject.url;
+    newArr[pos].updatedAt = new Date();
     let updateMemeObject = newArr[pos];
     console.log(updateMemeObject);
 
