@@ -144,6 +144,9 @@ $ npm start
 
 <p align="center">
   <img src="./img/1.png" style="border: 1px solid gray">
+  <br>
+  Screenshot for Inspect Elements with UI
+  <img src="./img/2.png" style="border: 1px solid gray">
 </p>
 
 
