@@ -10,7 +10,7 @@
 
 ## About
 
-this is MemeStream, a full stack web app created using node.js, express, react.js to crud operations on meme objects, this was created as a mini project submission at [Crio Winter of Doing](https://www.crio.do/crio-winter-of-doing/) challenge.
+this is MemeStream, a full stack web app created using node.js, express, react.js to facilitate crud operations on meme objects, this was created as a mini project submission at [Crio Winter of Doing](https://www.crio.do/crio-winter-of-doing/) challenge.
 
 ## Deployed Links
 
