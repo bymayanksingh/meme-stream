@@ -11,7 +11,7 @@ app.use(express.json());
 
 app.use(captureDateMiddleware);
 
-app.use("/", routes);
+app.use("", routes);
 mongoose
   .connect(config.mongoose.url, config.mongoose.options)
   .then(() => {
