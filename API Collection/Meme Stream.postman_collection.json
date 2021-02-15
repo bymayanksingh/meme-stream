@@ -56,7 +56,7 @@
 			"request": {
 				"method": "DELETE",
 				"header": [],
-				"url": "localhost:8082/v1/todos/1611056145826"
+				"url": "http://localhost:8081/v1/memes/602992bcb4b5e8002240ee94"
 			},
 			"response": []
 		}
