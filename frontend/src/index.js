@@ -7,7 +7,7 @@ import {BrowserRouter} from "react-router-dom";
 import ipConfig from "./ipConfig.json";
 
 export const config = {
-  endpoint: `http://${ipConfig.ip}:8082/v1`,
+  endpoint: `http://${ipConfig.ip}:8081/v1`,
 };
 
 ReactDOM.render(
