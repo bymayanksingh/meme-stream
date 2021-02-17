@@ -20,4 +20,13 @@ const memeSchema = new mongoose.Schema(
   },
 );
 
+memeSchema.virtual('id').get(function(){
+  return this._id.toHexString();
+});
+
+// Ensure virtual fields are serialised.
+memeSchema.set('toJSON', {
+  virtuals: true
+});
+
 module.exports = mongoose.model("Meme", memeSchema);
