@@ -10,5 +10,7 @@ sudo apt-get install -y mongodb-org
 node --version
 npm --version
 mongo --version
+sudo systemctl start mongod
+mongo
 rm package-lock.json
 npm install
